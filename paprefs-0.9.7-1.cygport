@@ -1,0 +1,5 @@
+inherit gnome2
+
+DESCRIPTION="PulseAudio GConf preferences GUI"
+HOMEPAGE="http://0pointer.de/lennart/projects/paprefs/"
+SRC_URI="${HOMEPAGE}/${P}.tar.gz"
