@@ -1,6 +1,0 @@
-category: Audio
-requires: libatkmm1.6_1 libdbus-glib_1_2 libdbus1_3 libgcc1 libgconfmm2.6_1 libglademm2.4_1 libglib2.0_0 libglibmm2.4_1 libgtk2.0_0 libgtkmm2.4_1 libintl8 libsigc2.0_0 libstdc++6
-sdesc: "PulseAudio Preferences"
-ldesc: "PulseAudio Preferences (paprefs) is a simple GTK based 
-configuration dialog for the PulseAudio sound server. Please note that 
-this program can only configure local servers."
