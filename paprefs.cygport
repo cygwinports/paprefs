@@ -2,13 +2,18 @@ inherit gnome2
 
 NAME="paprefs"
 VERSION=0.9.10
-RELEASE=1
+RELEASE=2
 CATEGORY="Audio"
 SUMMARY="PulseAudio Preferences"
 DESCRIPTION="PulseAudio Preferences (paprefs) is a simple GTK based
 configuration dialog for the PulseAudio sound server. Please note that this
 program can only configure local servers."
-REQUIRES="pulseaudio"
 HOMEPAGE="http://freedesktop.org/software/pulseaudio/paprefs/"
 SRC_URI="${HOMEPAGE}/${NAME}-${VERSION}.tar.gz"
-PATCH_URI="0.9.10-shrext.patch"
+PATCH_URI="
+	http://pkgs.fedoraproject.org/cgit/paprefs.git/plain/paprefs-0.9.10-modules-path.patch
+	http://pkgs.fedoraproject.org/cgit/paprefs.git/plain/paprefs-0.9.10-module-combine-sink.patch
+	0.9.10-shrext.patch
+"
+
+REQUIRES="pulseaudio-module-gconf"
